@@ -1,0 +1,68 @@
+@import "./variables";
+
+header {
+  margin: 2rem 0;
+
+  h1 {
+    text-align: center;
+    text-transform: uppercase;
+    color: $primaryColor;
+
+    span {
+      color: $secondaryColor;
+      font-weight: 300;
+      border-bottom: 1px solid $secondaryColor;
+    }
+  }
+}
+
+.input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  input {
+    width: 300px;
+    height: 40px;
+    font-size: 15px;
+    border: none;
+    background: $backgroundColor;
+    color: $primaryColor;
+    padding-left: 12px;
+
+    border-radius: 20px;
+    box-shadow: -7px -7px 20px 0 $neumorphism, 7px 7px 20px 0 $neumorphism2;
+    margin-right: 10px;
+
+    &::placeholder {
+      color: rgba(233, 55, 55, 0.753);
+    }
+
+    &:focus {
+      box-shadow: inset -7px -7px 20px 0 $neumorphism,
+        inset 7px 7px 20px 0 $neumorphism2;
+    }
+  }
+
+  button {
+    width: 40px;
+    height: 40px;
+
+    color: white;
+    background: $backgroundColor;
+
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+
+    font-weight: bold;
+    box-shadow: -7px -7px 20px 0 $neumorphism, 7px 7px 20px 0 $neumorphism2;
+
+    &:active {
+      box-shadow: inset -7px -7px 20px 0 $neumorphism,
+        inset 7px 7px 20px 0 $neumorphism2;
+    }
+  }
+}

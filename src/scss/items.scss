@@ -1,0 +1,40 @@
+.items {
+  .item {
+    width: 300px;
+    max-width: 375px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin: 40px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    box-shadow: -7px -7px 20px 0 $neumorphism, 7px 7px 20px 0 $neumorphism2;
+
+    p {
+      color: $primaryColor;
+    }
+
+    button {
+      width: 30px;
+      height: 30px;
+
+      color: white;
+      background: $backgroundColor;
+
+      border: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 20px;
+
+      font-weight: bold;
+      box-shadow: -7px -7px 20px 0 $neumorphism, 7px 7px 20px 0 $neumorphism2;
+
+      &:active {
+        box-shadow: inset -7px -7px 20px 0 $neumorphism,
+          inset 7px 7px 20px 0 $neumorphism2;
+      }
+    }
+  }
+}
